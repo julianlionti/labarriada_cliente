@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "Showcase Sans Mini";
+  src: local("Showcase Sans Mini"),
+    url(./assets/fonts/showcase/ShowcaseSansMini.otf) format("opentype");
+}
