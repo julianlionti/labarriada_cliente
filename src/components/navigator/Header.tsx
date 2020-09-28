@@ -10,19 +10,15 @@ import {
   Avatar,
   TextField
 } from "@material-ui/core"
-import { menuWidth, RoutesProps } from "./DrawerMenu"
+import { RoutesProps } from "./DrawerMenu"
 import {
-  FaBars,
-  FaHome,
   FaMapMarkedAlt,
   FaPhoneAlt,
   FaQuestion,
   FaSearch,
   FaShoppingBag,
-  FaShoppingCart,
-  FaUser
+  FaShoppingCart
 } from "react-icons/fa"
-import { useLocation } from "react-router-dom"
 import Logo from "../../assets/images/solo_logo.png"
 import LogoTexto from "../../assets/images/solo_texto.png"
 import MenuItem from "./MenuItem"
@@ -34,8 +30,8 @@ interface Props {
 
 export default memo(({ routes }: Props) => {
   const classes = useClasses()
-  const { pathname } = useLocation()
-  const actual = routes.find((e) => e.route === pathname)
+  // const { pathname } = useLocation()
+  // const actual = routes.find((e) => e.route === pathname)
 
   return (
     <AppBar position="fixed" className={classes.container}>

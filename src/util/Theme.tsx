@@ -1,5 +1,4 @@
 import { createMuiTheme } from "@material-ui/core"
-import ShowCase from "../assets/fonts/showcase/ShowcaseSansMini.otf"
 
 export const colors = {
   white: "#FFFFFF",
@@ -7,7 +6,8 @@ export const colors = {
   primary: "#df4730",
   secondary: "#ee9224",
   terciary: "#689448",
-  forth: "#35b6ec"
+  forth: "#35b6ec",
+  primaryTrans: "rgba(0,0,0,0.50)"
 }
 
 export const getTheme = () =>
@@ -23,7 +23,7 @@ export const getTheme = () =>
     typography: {
       // fontFamily: "Showcase Sans Mini",
       // fontSize: 22,
-      
+
       h1: {
         fontSize: 32
       }
@@ -45,6 +45,11 @@ export const getTheme = () =>
           justifyContent: "space-between",
           alignItems: "stretch",
           color: colors.black
+        }
+      },
+      MuiPaper: {
+        rounded: {
+          borderRadius: 0
         }
       }
     }
